@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Fjalla+One&family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #777;
+}
+
+
+header {
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, rgba(255, 192, 203, 0.336), rgba(255, 217, 0, 0.427) ), url("../images/pexels-jill-wellington-39853.jpg");
+    background-size: cover;
+    background-position: bottom;
+    clip-path: polygon(0 0, 100% 0%, 100% 82%, 0 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.text-box {
+    position:absolute;
+    top: 30%;
+    left: 65%;
+    transform: translate(-50%, -50%); 
+}
+
+.heading-primary {
+    text-transform: uppercase;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 1.1rem;
+    color: rgba(44, 41, 41, 0.941);
+    animation-name: moveInLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(20px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 1.3rem;
+    letter-spacing: 0.5rem;
+    color: grey;
+    animation-name: moveInRight;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateX(-20px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn-container {
+    text-align: center;
+    }
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid rgb(195, 167, 82);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background-color: rgba(119, 119, 119, 0.082);
+    color: rgb(49, 47, 47);
+    transform: translateY(-3px);
+    
+}
+
+.btn:active {
+    transform: translateY(0);
+    
+}
+
+footer {
+    color: rgba(188, 160, 22, 0.868);
+    padding-top: 0.1rem;
+    text-align: center;
+    animation-name: headerSlide;
+    animation-duration: 5s;
+      
+}
+
+@keyframes headerSlide {
+    0% {
+        opacity: 0;
+    }
+    
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+footer p {
+    overflow: hidden;
+}
